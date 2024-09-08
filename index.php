@@ -13,6 +13,8 @@ if(isset($_POST["btnLogin"])){
    
     
     $dataarray = mysqli_fetch_assoc($dataquery);
+
+
    
     if($dataarray){
         $_SESSION["sname"] = $username;
@@ -32,7 +34,7 @@ if(isset($_POST["btnLogin"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project1</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/login/style.css">
+    <link rel="stylesheet" href="assets2/login/style.css">
 
     <style>
        
@@ -41,7 +43,7 @@ if(isset($_POST["btnLogin"])){
 <body>
     <di v class="logo">
         <h1 class="text-danger">
-            <img style="width: 200px;" src="assets/logo/logopic.png" alt="">
+            <img style="width: 200px;" src="assets2/logo/logopic.png" alt="">
         </h1>
     </div>
 
@@ -66,10 +68,11 @@ if(isset($_POST["btnLogin"])){
             <input type="submit" value="Login" name="btnLogin" id= "button" class= "btn btn-login bg-primary">
         </div>
         </form>
-        <p class="newUser">
-            Not a member? <span>Signup now</span>
-        </p>
-    </div>
+            <p class="newUser">
+                Not a member? <span>Signup now</span>
+            </p>
+
+        </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
